@@ -1,13 +1,13 @@
-<!--
+
 					<div class="entry-info">
 						<p>
-							<span class="entry-author">
+							<!-- <span class="entry-author">
 								<?php esc_html_e( 'Posted by ', 'frugix' ); ?>
 								<?php the_author_link(); ?>
-							</span>
+							</span> -->
 
 							<span class="entry-date">
-								<?php esc_html_e( ' on ', 'frugix' ); ?>
+								<?php esc_html_e( ' Опубліковано ', 'frugix' ); ?>
 								<a href="<?php echo esc_url( get_permalink() ); ?>">
 									<?php the_time( get_option( 'date_format' ) ); ?>
 								</a>
@@ -22,11 +22,11 @@
 							<br />
 
 							<span class="entry-categories">
-								<?php esc_html_e( 'Posted in ', 'vethealththeme' ); ?>
+								<?php esc_html_e( 'Розділ: ', 'vethealththeme' ); ?>
 								<?php the_category( ', ' ); ?>
 							</span>
-
-                            <?php the_tags( '<span class="entry-tags"> &ndash; ' . __( 'Tags:', 'vethealththeme' ) . ' ', ', ', '</span>' ); ?>
+							<br />
+                            <?php the_tags( '<span class="entry-tags">' . __( 'Мітки:', 'vethealththeme' ) . ' ', ', ', '</span>' ); ?>
 						</p>
 
 						<?php if ( is_single() ) : ?>
@@ -37,6 +37,5 @@
 						<?php endif; ?>
 
 						<?php edit_post_link(); ?>
-						<hr />
+					
 					</div>
--->

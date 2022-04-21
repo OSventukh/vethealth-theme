@@ -16,6 +16,11 @@
 		<div class="wrap">
 			<h2 class="title"><?php single_cat_title('<h2 class="title">', '</h2>'); ?>
 		</div>
+	<?php elseif (is_tag()) : ?>
+
+		<div class="wrap">
+			<h2 class="title"><?php single_tag_title('<h2 class="title">Пошук по мітці: ', '</h2>'); ?>
+		</div>
 
 	<?php else : ?>
 		<div class="wrap">
@@ -28,7 +33,7 @@
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content-post-list' );
 				}
 				get_template_part( 'template-parts/pagination' );
 

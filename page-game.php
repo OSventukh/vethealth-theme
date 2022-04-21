@@ -14,11 +14,11 @@
 	<meta name="theme-color" content="#000000" />
 	<meta name="description" content="Пригоди російського солдата на навчаннях" />
 	<title>Пригоди російського солдата на навчаннях</title>
-	<script defer="defer" src="wp-content/game/static/js/main.3c661ebc.js?v1.0"></script>
-	<link href="wp-content/game/static/css/main.ad6a78bb.css?v=1.0" rel="stylesheet">
+	<script defer="defer" src="wp-content/game/static/js/game.js?v1.0"></script>
+	<link href="wp-content/game/static/css/game.css?v=1.0" rel="stylesheet">
 </head>
 
-<body><noscript>You need to enable JavaScript to run this app.</noscript>
+<body>
 	<div id="root"></div>
 </body>
 
